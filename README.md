@@ -23,13 +23,13 @@ pip install numpy pandas scikit-learn matplotlib seaborn keras tensorflow
 5. Perbarui file `data/lm_price.json` dari https://www.logammulia.com/id/grafik-harga-emas (lihat inspect element, cek response api https://www.logammulia.com/data-base-price/gold/sell?_token=xxx)
 6. Konversi data json menjadi csv
 ```bash
-python src/json_to_csv.py
+python3 src/json_to_csv.py
 ```
 7. Latih model
 ```bash
-python src/train.py
+python3 src/train.py
 ```
 8. Lakukan prediksi
 ```bash
-python src/predict.py
+python3 src/predict.py
 ```
