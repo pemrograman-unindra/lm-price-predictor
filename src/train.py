@@ -9,7 +9,7 @@ df, scaler = normalize_data(df)
 data = df["Price_Normalized"].values
 
 # Create sequences
-X, y = create_sequences(data, window_size=365)
+X, y = create_sequences(data, window_size=30)
 X = X.reshape((X.shape[0], X.shape[1], 1))
 
 # Split

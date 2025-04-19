@@ -9,7 +9,7 @@ df.sort_values("dateTime", inplace=True)
 df, scaler = normalize_data(df)
 
 # Ambil data terakhir untuk prediksi (1 tahun terakhir)
-window_size = 365
+window_size = 30
 last_sequence = df["Price_Normalized"].values[-window_size:]
 X_input = np.array(last_sequence).reshape((1, window_size, 1))
 
